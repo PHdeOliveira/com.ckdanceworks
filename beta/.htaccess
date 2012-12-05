@@ -1,6 +1,3 @@
-# Use PHP5 Single php.ini as default
-AddHandler application/x-httpd-php5s .php
-
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
