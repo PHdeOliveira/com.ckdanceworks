@@ -9,131 +9,131 @@
  * @since Twenty Eleven 1.0
  */
 ?><!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
 <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
-<title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>CK DANCEWORKS</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" class="cssfx">
+<script src="<?php bloginfo('template_directory'); ?>/js/cssfx.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/pink.css" class="cssfx">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/sequence.css" class="cssfx">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/coda-slider-2.0.css" class="cssfx">
+<!-- Phone -->
+<link href="<?php bloginfo('template_directory'); ?>/css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)" class="cssfx">
+<!-- Phone Wide -->
+<link href="<?php bloginfo('template_directory'); ?>/css/phone-landscape.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:480px)" class="cssfx">
+<!-- Tablet -->
+<link href="<?php bloginfo('template_directory'); ?>/css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:768px)" class="cssfx">
+<!-- Desktop -->
+<link href="<?php bloginfo('template_directory'); ?>/css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px) and (max-width:1000px)" class="cssfx">
+<!--[if (lt IE 9)&(!IEMobile 7)]>
+      <link rel="stylesheet" href="desktop.css">
+    <![endif]-->
 
-	wp_title( '|', true, 'right' );
-
-	// Add the blog name.
-	bloginfo( 'name' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
-
-	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<!--[if IE 9]>
+<link rel="stylesheet" href="css/ie.css">
 <![endif]-->
-<?php
-	/* We add some JavaScript to pages with the comment form
-	 * to support sites with threaded comments (when in use).
-	 */
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
-
-	/* Always have wp_head() just before the closing </head>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to add elements to <head> such
-	 * as styles, scripts, and meta tags.
-	 */
-	wp_head();
-?>
+<script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<p id="back-top"><a href="#top"><span></span></a></p>
 
-<body <?php body_class(); ?>>
-<div id="page" class="hfeed">
-	<header id="branding" role="banner">
-			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</hgroup>
+<!-- Begin Wrapper -->
+<div class="wrapper topBorder">
 
-			<?php
-				// Check to see if the header image has been removed
-				$header_image = get_header_image();
-				if ( $header_image ) :
-					// Compatibility with versions of WordPress prior to 3.4.
-					if ( function_exists( 'get_custom_header' ) ) {
-						// We need to figure out what the minimum width should be for our featured image.
-						// This result would be the suggested width if the theme were to implement flexible widths.
-						$header_image_width = get_theme_support( 'custom-header', 'width' );
-					} else {
-						$header_image_width = HEADER_IMAGE_WIDTH;
-					}
-					?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<?php
-					// The header image
-					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
-					if ( is_singular() && has_post_thumbnail( $post->ID ) &&
-							( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( $header_image_width, $header_image_width ) ) ) &&
-							$image[1] >= $header_image_width ) :
-						// Houston, we have a new header image!
-						echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
-					else :
-						// Compatibility with versions of WordPress prior to 3.4.
-						if ( function_exists( 'get_custom_header' ) ) {
-							$header_image_width  = get_custom_header()->width;
-							$header_image_height = get_custom_header()->height;
-						} else {
-							$header_image_width  = HEADER_IMAGE_WIDTH;
-							$header_image_height = HEADER_IMAGE_HEIGHT;
-						}
-						?>
-					<img src="<?php header_image(); ?>" width="<?php echo $header_image_width; ?>" height="<?php echo $header_image_height; ?>" alt="" />
-				<?php endif; // end check for featured image or standard header ?>
-			</a>
-			<?php endif; // end check for removed header image ?>
-
-			<?php
-				// Has the text been hidden?
-				if ( 'blank' == get_header_textcolor() ) :
-			?>
-				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
-				</div>
-			<?php
-				else :
-			?>
-				<?php get_search_form(); ?>
-			<?php endif; ?>
-
-			<nav id="access" role="navigation">
-				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
-				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
-				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
-				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #access -->
-	</header><!-- #branding -->
-
-
-	<div id="main">
+<!-- Begin Header -->
+  <header id="mainHeader" class="clearfix">
+    <div id="logoCon">
+    <!-- Logo -->
+      <h1 id="logo"><a href="index.htm">Beauty <span class="gery">Care</span></a></h1>
+      
+      <p class="des">Tagline Goes Here</p>
+    </div>
+    
+      <!-- Begin Main Navigation -->
+    <nav id="menu">
+      <h2 class="visuallyhidden">Main Navigation</h2>
+      <ul class="menu">
+        <li  class="current"><a href="index.htm">Home</a><span class="desc">welcome</span></li>
+        <li><a href="about.htm">About</a><span class="desc">our company</span></li>
+        <li><a href="#" class="parent">Pages</a><span class="desc">list of Pages</span>
+          <!-- Dropdown Level 1 -->
+          <ul>
+            <li><a href="#" class="parent">Home Pages</a>
+              <!-- Dropdown Level 2 -->	
+              <ul>
+                <li><a href="index.htm"><span>Home 1</span></a></li>
+                <li><a href="index2.htm"><span>Home 2</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="parent">Sub Page Headers</a>
+              <!-- Dropdown Level 2 -->	
+              <ul>
+                <li><a href="style1.htm"><span>Style 1</span></a></li>
+                <li><a href="style2.htm"><span>Style 2</span></a></li>
+              </ul>
+            </li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="services.htm" class="parent">Services</a>
+              <!-- Dropdown Level 2 -->
+              <ul>
+                <li><a href="services.htm"><span>List of Services 1</span></a></li>
+                <li><a href="services2.htm"><span>List of Services 2</span></a></li>
+                <li><a href="service-single.htm"><span>Service and Packages</span></a></li>
+              </ul>
+            </li>
+            <li><a href="products.htm" class="parent">Products</a>
+              <!-- Dropdown Level 2 -->
+              <ul>
+                <li><a href="products.htm">All Products</a></li>
+                <li><a href="product-single.htm">About a Product</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="parent">Others</a>
+              <!-- Dropdown Level 2 -->
+              <ul>
+                <li><a href="left-navigation.htm">Left Navigation</a></li>
+                <li><a href="right-navigation.htm">Right Navigation</a></li>
+                <li><a href="left-sidebar.htm">Left Sidebar</a></li>
+                <li><a href="right-sidebar.htm">Right Sidebar</a></li>
+                <li><a href="full-width.htm">Full Width</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.htm" class="parent">Blog</a>
+              <!-- Dropdown Level 2 -->
+              <ul>
+                <li><a href="blog.htm">Blog</a></li>
+                <li><a href="single-blog.htm">Single Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="contact-enquire.php" class="parent">Contact</a>
+              <!-- Dropdown Level 2 -->
+              <ul>
+                <li><a href="contact-enquire.php">Enquire</a></li>
+                <li><a href="contact-appointment.php">Appointment</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Dropdown Level 1 End -->
+        </li>
+        <li><a href="services.htm">Services</a><span class="desc">what we do</span></li>
+        <li><a href="blog.htm">Blog</a><span class="desc">articles</span></li>
+        <li class="last"><a href="contact-enquire.php">Contact</a><span class="desc">Need Help?</span></li>
+      </ul>
+    </nav>
+    <!-- End Main Navigation -->
+  </header>
+  <!-- End Header -->
+  

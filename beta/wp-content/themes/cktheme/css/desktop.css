@@ -1,0 +1,19 @@
+
+.wrapper {
+	width: 89%;
+}
+
+/* About page */
+
+.staffImg {
+	float: left;
+	width: 16.13%;
+}
+
+.staff .frame_round {
+	width: 87.24%;
+	margin: 0px 7px 10px 0px;
+}
+.staff .frame_round img {
+	width: 100%;
+}
