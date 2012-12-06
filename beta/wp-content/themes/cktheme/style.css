@@ -65,7 +65,7 @@ body {
 	margin: 0;
 	font-size: 1em;
 	line-height: 1.4;
-	background: url(../img/body_bg.jpg) repeat left top;
+	background: url(../images/body_bg.jpg) repeat left top;
 }
 
 /* Selction Colors */
@@ -370,7 +370,7 @@ p {
 }
 
 .circleSep .circleLeft {
-	background: url(../img/circles.png) no-repeat right top;
+	background: url(../images/circles.png) no-repeat right top;
 	height: 60px;
 	width: 40px;
 	position: absolute;
@@ -379,7 +379,7 @@ p {
 }
 
 .circleSep .circleRight {
-	background: url(../img/circles.png) no-repeat left top;
+	background: url(../images/circles.png) no-repeat left top;
 	height: 60px;
 	width: 40px;
 	position: absolute;
@@ -846,7 +846,7 @@ nav#menu ul.menu li ul { padding-top: 11px; }
 	background: none;
 }
 
-#menu ul ul li:hover a.parent { background: url(../img/nav-arrow.png) no-repeat center right; }
+#menu ul ul li:hover a.parent { background: url(../images/nav-arrow.png) no-repeat center right; }
 
 #menu ul ul li.last { background: none; }
 
@@ -949,7 +949,7 @@ nav#menu ul.menu li ul a {
 
 
 #bannerNormal {
-	background: url(../img/banner-bg.jpg) no-repeat left top;
+	background: url(../images/banner-bg.jpg) no-repeat left top;
 	height: 300px;
 	margin-bottom: 77px;
 }
@@ -1029,7 +1029,7 @@ nav#menu ul.menu li ul a {
 .frame_round {
 	border-radius: 150px;
 	padding: 5px;
-	background: url(../img/featured-img-bg.png) repeat left top;
+	background: url(../images/featured-img-bg.png) repeat left top;
 	behavior: url(\PIE.htc);
 }
 
@@ -1154,9 +1154,10 @@ nav#menu ul.menu li ul a {
 }
 
 blockquote {
-	background: url(../img/quote.png) no-repeat left top;
-	padding: 2px 0 0 27px;
-	margin: 0;
+	background: url(../images/quote.png) no-repeat left top;
+	padding: 2px 0 0 10px;
+	display: table;
+	margin: 0 auto;
 }
 
 #testimonial p {
@@ -1174,7 +1175,7 @@ blockquote {
 
 #testimonial .arrow {
 	position: absolute;
-	background: url(../img/tes-arrrow.png) no-repeat left top;
+	background: url(../images/tes-arrrow.png) no-repeat left top;
 	height: 12px;
 	width: 22px;
 	bottom: -12px;
@@ -1344,7 +1345,7 @@ blockquote {
 }
 
 .widget_categories li {
-	background: url(../img/cat-widget-cion.png) no-repeat left 12px;
+	background: url(../images/cat-widget-cion.png) no-repeat left 12px;
 	list-style: none;
 	padding-left: 28px;
 	border-bottom: 1px solid #f2f2f2;
@@ -1392,7 +1393,7 @@ blockquote {
 }
 
 #pageFooter li {
-	background: url(../img/widget-arrow.png) no-repeat left 5px;
+	background: url(../images/widget-arrow.png) no-repeat left 5px;
 	padding-left: 16px;
 	width: 90%;
 	font-size: 14px;
@@ -1461,7 +1462,7 @@ blockquote {
 .socialIcons { width: 210px; }
 
 .socialIcons a {
-	background: url(../img/socail-icons.png) no-repeat left top;
+	background: url(../images/socail-icons.png) no-repeat left top;
 	width: 25px;
 	height: 25px;
 	display: block;
@@ -1736,12 +1737,12 @@ ul.list li {
 
 
 .post ul.flower li {
-	background: url(../img/cat-widget-cion.png) no-repeat left 4px;
+	background: url(../images/cat-widget-cion.png) no-repeat left 4px;
 	min-height: 22px;
 }
 
 .post ul.arrow li {
-	background: url(../img/widget-arrow.png) no-repeat 2px 6px;
+	background: url(../images/widget-arrow.png) no-repeat 2px 6px;
 	padding-left: 18px;
 }
 
@@ -1752,7 +1753,7 @@ ul.list li {
 }
 
 .post img {
-	background: url(../img/featured-img-bg.png) repeat left top;
+	background: url(../images/featured-img-bg.png) repeat left top;
 	padding: 5px;
 	margin: 0px 10px 10px 0px;
 }
@@ -1917,7 +1918,7 @@ ul.list li {
          
 .map {
 	padding: 5px;
-	background: url(../img/featured-img-bg.png) repeat left top;
+	background: url(../images/featured-img-bg.png) repeat left top;
 	margin-bottom: 20px;
 	min-height: 296px;
 }
@@ -2015,7 +2016,7 @@ ul.list li {
 
 .lt-ie9 #sidebar .subNavigation li a:hover {
 	border-radius: 4px;
-	background: #85b5c1 url(../img/sub-nav-icon.png) no-repeat -27px 11px;
+	background: #85b5c1 url(../images/sub-nav-icon.png) no-repeat -27px 11px;
 }
 
 /* =============================================================================
@@ -2114,7 +2115,7 @@ ul.list li {
 	height: 50px;
 	display: block;
 	margin-bottom: 7px;
-	background: #ddd url(../img/arrow.png) no-repeat center center;
+	background: #ddd url(../images/arrow.png) no-repeat center center;
 	border-radius: 8px;
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
