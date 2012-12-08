@@ -66,25 +66,32 @@
     <nav id="menu">
       <h2 class="visuallyhidden">Main Navigation</h2>
       <ul class="menu">
-        <li  class="current"><a href="index.htm">Home</a><span class="desc">welcome</span></li>
-        <li><a href="about.htm">About</a><span class="desc">our company</span></li>
-        <li><a href="#" class="parent">Pages</a><span class="desc">list of Pages</span>
-          <!-- Dropdown Level 1 -->
-          <ul>
-            <li><a href="#" class="parent">Home Pages</a>
-              <!-- Dropdown Level 2 -->	
-              <ul>
-                <li><a href="index.htm"><span>Home 1</span></a></li>
-                <li><a href="index2.htm"><span>Home 2</span></a></li>
-              </ul>
-            </li>
-            <li><a href="#" class="parent">Sub Page Headers</a>
-              <!-- Dropdown Level 2 -->	
-              <ul>
-                <li><a href="style1.htm"><span>Style 1</span></a></li>
-                <li><a href="style2.htm"><span>Style 2</span></a></li>
-              </ul>
-            </li>
+        <li  class="current">
+        	<a href="index.htm">Home</a>
+        	<span class="desc">welcome</span>
+    	</li>
+        <li>
+	        <a href="about.htm">About</a>
+	        <span class="desc">CKDW</span>
+        </li>
+        <li>
+	        <a href="#" class="parent">Pages</a><span class="desc">list of Pages</span>
+	          <!-- Dropdown Level 1 -->
+	          <ul>
+	            <li><a href="#" class="parent">Home Pages</a>
+	              <!-- Dropdown Level 2 -->	
+	              <ul>
+	                <li><a href="index.htm"><span>Home 1</span></a></li>
+	                <li><a href="index2.htm"><span>Home 2</span></a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" class="parent">Sub Page Headers</a>
+	              <!-- Dropdown Level 2 -->	
+	              <ul>
+	                <li><a href="style1.htm"><span>Style 1</span></a></li>
+	                <li><a href="style2.htm"><span>Style 2</span></a></li>
+	              </ul>
+        </li>
             <li><a href="about.htm">About</a></li>
             <li><a href="services.htm" class="parent">Services</a>
               <!-- Dropdown Level 2 -->

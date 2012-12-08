@@ -76,6 +76,14 @@
 	s.parentNode.insertBefore(g,s)}(document,'script'));*/
 </script>
 
+<script type="text/javascript">
+		
+			$(document).ready(function() {
+			    $('.columns .one_third:last-child').addClass("last");
+			});
+		
+</script>
+
 <?php wp_footer(); ?>
 
 </body>

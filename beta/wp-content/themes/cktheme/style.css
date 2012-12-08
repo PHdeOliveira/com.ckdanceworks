@@ -4,6 +4,20 @@ Theme Name: CK Dance Theme
 */
 
 
+/* =============================================================================
+   ^1 Common Styles
+   ========================================================================== */  
+.diplay-block {
+	display: block !important;
+	}
+.clear {
+	clear: both;
+	}
+.hidden-overflow {
+	overflow: hidden;
+	width: 93.3202358%;
+	height: 225px;
+}	
 
 /* =============================================================================
    ^1 @font-face Declaration
@@ -176,7 +190,7 @@ sub { bottom: -0.25em; }
 
 ul, ol {
 	margin: 1em 0;
-	padding: 0 0 0 40px;
+	padding: 0 0 0 35px;
 }
 
 dd { margin: 0 0 0 40px; }
@@ -1154,7 +1168,7 @@ nav#menu ul.menu li ul a {
 }
 
 blockquote {
-	background: url(../images/quote.png) no-repeat left top;
+	background: url(/images/quote.png) no-repeat left top;
 	padding: 2px 0 0 10px;
 	display: table;
 	margin: 0 auto;
@@ -1664,7 +1678,7 @@ div.content.noMarginBottom {
 
 .post h2.title a:hover, .post h2.title a:hover .blue {
 	background: transparent;
-	color: #C5843F;
+	color: #DF8599;
 }
 
 .post h2.title a:active, .post h2.title a:active .blue {
