@@ -25,61 +25,52 @@ get_header(); ?>
   </div>
   
   <!-- Begin Banner -->
-  <div id="bannerWide">
-    <div>
-      <div id="sequence">
-  			<?php if( get_field('hero_slider') ): ?>
- 
-			    <?php while( has_sub_field('hero_slider') ): ?>
-			    
-	
-		        <ul>
-		          <li>
-			          	
-				            <h2 class="title animate-in"><span class="blue"><?php the_sub_field('slider_title_1'); ?></h2>
-				            <p class="subtitle animate-in"><?php the_sub_field('slider_description_1'); ?></p>
-				            
-				            <img class="model animate-in" src="<?php the_sub_field('slider_image_1'); ?>" alt="<?php the_sub_field('slider_image'); ?>" > 
-			            
-		            </li>
-		            
-		          <li>
-			          
-				            <h2 class="title"><span class="blue"><?php the_sub_field('slider_title_2'); ?></h2>
-				            <p class="subtitle"><?php the_sub_field('slider_description_2'); ?></p>
-				            <img class="model" src="<?php the_sub_field('slider_image_2'); ?>" alt="<?php the_sub_field('slider_image_1'); ?>"> 
-			            
-		          </li>
-	            <li>
-			          
-				            <h2 class="title"><span class="blue"><?php the_sub_field('slider_title_3'); ?></h2>
-				            <p class="subtitle"><?php the_sub_field('slider_description_3'); ?></p>
-				            
-				            <img class="model" src="<?php the_sub_field('slider_image_3'); ?>" alt="<?php the_sub_field('slider_image_2'); ?>"> 
-			          
-	            </li>
-		          <li>
-			          
-				            <h2 class="title"><span class="blue"><?php the_sub_field('slider_title_4'); ?></h2>
-				            <p class="subtitle"><?php the_sub_field('slider_description_4'); ?></p>
-				            <img class="model" src="<?php the_sub_field('slider_image_4'); ?>" alt="<?php the_sub_field('slider_image_4'); ?>"> 
-			          
-	            </li>
-		        </ul>
-		        <?php endwhile; // end of the loop. ?>
+  <div id="bannerNormal">
+    <div id="ei-slider" class="ei-slider">
+        
+		      <ul class="ei-slider-large">
+		      <?php if( get_field('hero_slider') ): ?>
+    	
+		    	<?php while( has_sub_field('hero_slider') ): ?>
+
+		      
+		        <li><img src="<?php the_sub_field('slider_image_1'); ?>" alt="<?php the_sub_field('slider_image_1'); ?>">
+		          <div class="ei-title">
+		            <h2><span class="blue"><?php the_sub_field('slider_title_1'); ?></h2>
+		            <p><?php the_sub_field('slider_description_1'); ?></p>
+		            <a href="<?php the_sub_field('slider_link_1'); ?>" class="emboss_button">Learn More</a> </div>
+		        </li>
 		        
-			<?php endif; ?>
-      </div>
-      <ul id="nav">
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-      </ul>
+		        <li><img src="<?php the_sub_field('slider_image_2'); ?>" alt="<?php the_sub_field('slider_image_2'); ?>">
+		          <div class="ei-title">
+		            <h2><span class="blue"><?php the_sub_field('slider_title_2'); ?></h2>
+		            <p><?php the_sub_field('slider_description_2'); ?></p>
+		            <a href="<?php the_sub_field('slider_link_2'); ?>" class="emboss_button">Learn More</a> </div>
+		        </li>
+		        
+		        <li><img src="<?php the_sub_field('slider_image_3'); ?>" alt="<?php the_sub_field('slider_image_3'); ?>">
+		          <div class="ei-title">
+		            <h2><span class="blue"><?php the_sub_field('slider_title_3'); ?></h2>
+		            <p><?php the_sub_field('slider_description_3'); ?></p>
+		            <a href="<?php the_sub_field('slider_link_3'); ?>" class="emboss_button">Learn More</a> </div>
+		        </li>		        
+		      </ul>
+		       <?php endwhile; // end of the loop. ?>	      
+		 
+			 <?php endif; ?>
+	      <!-- ei-slider-large -->
+	      <ul class="ei-slider-thumbs">
+	        <li class="ei-slider-element">Current</li>
+	        <li><a href="#">Slide 1</a></li>
+	        <li><a href="#">Slide 2</a></li>
+	        <li><a href="#">Slide 3</a></li>
+	      </ul>
+	      <!-- ei-slider-thumbs --> 
+	      
+		
     </div>
   </div>
-  <!-- End Banner -->
-  
+  <!-- End Banner -->  
   
   <div class="sep clear"></div>
   
