@@ -26,47 +26,56 @@ get_header(); ?>
   
   <!-- Begin Banner -->
   <div id="bannerNormal">
-    <div id="ei-slider" class="ei-slider">
-        
-		      <ul class="ei-slider-large">
-		      <?php if( get_field('hero_slider') ): ?>
-    	
-		    	<?php while( has_sub_field('hero_slider') ): ?>
+    <div id="ei-slider" class="ei-slider">    
+		    	
+		    	
+		    	
+		    	<?php 
+		    	
+			    	$rows = get_field('hero_slider');
 
+						if($rows)
+						
+						{
+							$content = '<ul class="ei-slider-large">';
+							
+							$slider = ' <!-- ei-slider-large -->
+									      <ul class="ei-slider-thumbs">
+									        <li class="ei-slider-element">Current</li>';
+							
+							
+							$count = 0;
+							foreach($rows as $row)
+							
+
+							{
+														
+								$content .= '<li> 
+												<img src="' . the_sub_field('slider_image') . '" alt="' . the_sub_field('slider_image') . '">
+										          <div class="ei-title">
+										            <h2><span class="blue">' . the_sub_field('slider_title') . '</h2>
+										            <p>' . the_sub_field('slider_description') . '</p>
+										            <a href="' . the_sub_field('slider_link') . '" class="emboss_button">Learn More</a> 
+										          </div>
+									         </li>';
+							
+								$slider .= '<li>
+												<a href="#">Slide ' . ++$count . '</a>
+											</li>';
+							
+							}
+						 
+								$content .= '</ul>';
+								echo $content;
+								
+								$slider .= '</ul>';
+								echo $slider;
+						}
+                  ?>
 		      
-		        <li><img src="<?php the_sub_field('slider_image_1'); ?>" alt="<?php the_sub_field('slider_image_1'); ?>">
-		          <div class="ei-title">
-		            <h2><span class="blue"><?php the_sub_field('slider_title_1'); ?></h2>
-		            <p><?php the_sub_field('slider_description_1'); ?></p>
-		            <a href="<?php the_sub_field('slider_link_1'); ?>" class="emboss_button">Learn More</a> </div>
-		        </li>
-		        
-		        <li><img src="<?php the_sub_field('slider_image_2'); ?>" alt="<?php the_sub_field('slider_image_2'); ?>">
-		          <div class="ei-title">
-		            <h2><span class="blue"><?php the_sub_field('slider_title_2'); ?></h2>
-		            <p><?php the_sub_field('slider_description_2'); ?></p>
-		            <a href="<?php the_sub_field('slider_link_2'); ?>" class="emboss_button">Learn More</a> </div>
-		        </li>
-		        
-		        <li><img src="<?php the_sub_field('slider_image_3'); ?>" alt="<?php the_sub_field('slider_image_3'); ?>">
-		          <div class="ei-title">
-		            <h2><span class="blue"><?php the_sub_field('slider_title_3'); ?></h2>
-		            <p><?php the_sub_field('slider_description_3'); ?></p>
-		            <a href="<?php the_sub_field('slider_link_3'); ?>" class="emboss_button">Learn More</a> </div>
-		        </li>		        
-		      </ul>
-		       <?php endwhile; // end of the loop. ?>	      
+		      
+
 		 
-			 <?php endif; ?>
-	      <!-- ei-slider-large -->
-	      <ul class="ei-slider-thumbs">
-	        <li class="ei-slider-element">Current</li>
-	        <li><a href="#">Slide 1</a></li>
-	        <li><a href="#">Slide 2</a></li>
-	        <li><a href="#">Slide 3</a></li>
-	      </ul>
-	      <!-- ei-slider-thumbs --> 
-	      
 		
     </div>
   </div>
