@@ -18,11 +18,25 @@
 /** The name of the database for WordPress */
 define('DB_NAME', 'ckdatabase');
 
-/** MySQL database username */
-define('DB_USER', 'root');
+// this will allow you to set a different username and password
+// for your db for when you're running it locally vs when you're
+// running it on the server. replace your_computers_hostname with
+// your local computer's hostname and set the users and passwords
+// accordingly
+if ('your_computers_hostname' === $_SERVER['SERVER_NAME']) {
+    /** MySQL database username */
+    define('DB_USER', 'root');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'root');
+    /** MySQL database password */
+    define('DB_PASSWORD', 'root');
+
+} else {
+    /** MySQL database username */
+    define('DB_USER', 'root');
+
+    /** MySQL database password */
+    define('DB_PASSWORD', 'root');
+}
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
