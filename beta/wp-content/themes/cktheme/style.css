@@ -968,6 +968,16 @@ nav#menu ul.menu li ul a {
 	margin-bottom: 77px;
 }
 
+#bannerNormal {
+	li {
+		list-style: none;
+		}
+	img {
+		max-width: 920px;
+		height: auto;
+		width: 100%;
+	}
+}
 /* =============================================================================
    ^4c.III. Sub Banners
    ========================================================================== */

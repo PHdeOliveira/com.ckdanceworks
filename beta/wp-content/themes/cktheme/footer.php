@@ -57,8 +57,8 @@
 
 <!-- Begin Copyright -->
 <div class="clearfix" id="copyrightText">
-  <p class="floatLeft">&copy; 2012 <a href="index.htm">beauty-care.com</a>, All Rights Reserved. </p>
-  <p class="floatRight socialIcons"> Follow Us: <a href="https://plus.google.com/113423345865351724434" title="" target="_blank" class="google">google plus</a><a href="#" title="" class="rss">rss</a><a href="http://www.facebook.com/falcon4web" title="" target="_blank" class="facebook">facebook</a><a href="https://twitter.com/falcon_studio" title="" target="_blank" class="twitter">twitter</a></p>
+		  <p class="floatLeft">&copy; 2012 <a href="index.htm">beauty-care.com</a>, All Rights Reserved. </p>
+		  <p class="floatRight socialIcons"> Follow Us: <a href="https://plus.google.com/113423345865351724434" title="" target="_blank" class="google">google plus</a><a href="#" title="" class="rss">rss</a><a href="http://www.facebook.com/falcon4web" title="" target="_blank" class="facebook">facebook</a><a href="https://twitter.com/falcon_studio" title="" target="_blank" class="twitter">twitter</a></p>
 </div>
 <!-- End Copyright -->
 
