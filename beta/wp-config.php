@@ -20,14 +20,14 @@ define('DB_NAME', 'ckdancew_newsite');
 
 
 /** MySQL database username */
-define('DB_USER', 'ckdancew_newsite');
+define('DB_USER', 'ckdancew_test');
 
 
 /** MySQL database password */
-define('DB_PASSWORD', 'ckroot*');
+define('DB_PASSWORD', '1234!');
 
 /** MySQL hostname */
-define('DB_HOST', '173.254.28.139');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
