@@ -27,7 +27,6 @@ define('DB_USER', 'ckdancew_newsite');
 define('DB_PASSWORD', 'Dancer1*');
 
 /** MySQL hostname */
-
 define('DB_HOST', '173.254.28.139');
 
 /** Database Charset to use in creating database tables. */
