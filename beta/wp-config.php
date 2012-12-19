@@ -20,7 +20,7 @@ define('DB_NAME', 'ckdancew_newsite');
 
 
 /** MySQL database username */
-define('DB_USER', 'ckdancew@localhost');
+define('DB_USER', 'ckdancew_newsite');
 
 
 /** MySQL database password */
