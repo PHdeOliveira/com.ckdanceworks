@@ -58,7 +58,7 @@
   <header id="mainHeader" class="clearfix">
     <div id="logoCon">
     <!-- Logo -->
-      <h1 id="logo"><a href="index.htm">Beauty <span class="gery">Care</span></a></h1>
+      <h1 id="logo"><a href="index.htm">CK DANCEWORKS</a></h1>
       
       <p class="des">Tagline Goes Here</p>
     </div>
