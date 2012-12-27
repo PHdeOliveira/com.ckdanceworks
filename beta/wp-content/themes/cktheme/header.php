@@ -29,6 +29,7 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/pink.css" class="cssfx">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/sequence.css" class="cssfx">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/coda-slider-2.0.css" class="cssfx">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/banner.css" class="cssfx">
 <!-- Phone -->
 <link href="<?php bloginfo('template_directory'); ?>/css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)" class="cssfx">
 <!-- Phone Wide -->

@@ -3,7 +3,7 @@
 
 
 <?php
-/**
+/**x
  * The main template file.
  *
  * This is the most generic template file in a WordPress theme
@@ -51,11 +51,11 @@ get_header(); ?>
 							{
 														
 								$content .= '<li> 
-												<img src="' . the_sub_field('slider_image') . '" alt="' . the_sub_field('slider_image') . '">
+												<img src="' . $row['slider_image'] . '" alt="' . $row['slider_image'] . '">
 										          <div class="ei-title">
-										            <h2><span class="blue">' . the_sub_field('slider_title') . '</h2>
-										            <p>' . the_sub_field('slider_description') . '</p>
-										            <a href="' . the_sub_field('slider_link') . '" class="emboss_button">Learn More</a> 
+										            <h2><span class="blue">' . $row['slider_title'] . '</h2>
+										            <p>' . $row['slider_description'] . '</p>
+										            <a href="' . $row['slider_link'] . '" class="emboss_button">Learn More</a> 
 										          </div>
 									         </li>';
 							
@@ -73,10 +73,7 @@ get_header(); ?>
 						}
                   ?>
 		      
-		      
-
-		 
-		
+			
     </div>
   </div>
   <!-- End Banner -->  
@@ -128,6 +125,7 @@ get_header(); ?>
       <article class="clearfix columns noBorder beInTouch">
       
         <h2>BE IN <span class="blue">TOUCH</span></h2>
+        
         <article class="two_third">
           <h3>What Our <span class="blueBlod">Customer Says</span></h3>
           
@@ -136,40 +134,25 @@ get_header(); ?>
         	<?php if( get_field('quotes') ): ?>
  
 			    <?php while( has_sub_field('quotes') ): ?>
-            <div class="coda-slider" id="slider-id"><div>
-            
-          <h2 class="title">Panel 1</h2>
-          <blockquote>
-                    <p><?php the_sub_field('quote_1'); ?></p>
-                    <p class="author">- <?php the_sub_field('quote_1_author'); ?></p>
-                  </blockquote>
-        </div>
-        <div>
-          <h2 class="title">Panel 2</h2>
-          <blockquote>
-                    <p><?php the_sub_field('quote_2'); ?></p>
-                    <p class="author">- <?php the_sub_field('quote_2_author'); ?></p>
-                  </blockquote>
-        </div>
-        <div>
-          <h2 class="title">Panel 3</h2>
-          <blockquote>
-                    <p><?php the_sub_field('quote_3'); ?></p>
-                    <p class="author">- <?php the_sub_field('quote_3_author'); ?></p>                 
-          </blockquote>
-        </div>
-        <div>
-          <h2 class="title">Panel 4</h2>
-          <blockquote>
-                    <p><?php the_sub_field('quote_4'); ?></p>
-                    <p class="author">- <?php the_sub_field('quote_4_author'); ?></p>
-                  </blockquote>
-        </div>
+ 		             <div class="coda-slider" id="slider-id"><div>
+			         <div>   
+				          <h2 class="title">Panel</h2>
+					          <blockquote>
+				                    <p><?php the_sub_field('quote'); ?></p>
+				                    <p class="author">- <?php the_sub_field('quote_author'); ?></p>
+			                  </blockquote>
+			        </div>
+        
+     
 		         <?php endwhile; // end of the loop. ?>
-		<?php endif; ?>
-
-      </div>
+		
+	         <?php endif; ?>
+		
+		    
+	     </div>
+	      
             <div class="arrow"></div>
+            
           </div>
 
           
